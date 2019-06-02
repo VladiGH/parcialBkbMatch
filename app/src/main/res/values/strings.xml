@@ -9,4 +9,11 @@
     <string name="terminar_juego">Terminar juego</string>
     <string name="equipo_izq">Equipo izq</string>
     <string name="equipo_der">Equipo der</string>
+    <string name="fecha">Fecha:</string>
+    <string name="hora">Hora:</string>
+    <string name="visitante">Visitante</string>
+    <string name="local">Local</string>
+    <string name="ingresa_el_nombre_del_equipo">Ingresa el nombre del equipo</string>
+    <string name="nombre_del_equipo">Nombre del equipo</string>
+    <string name="a_jugar">A jugar!</string>
 </resources>
