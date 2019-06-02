@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BkbControl</string>
+    <string name="team_a">Team A</string>
+    <string name="_3_puntos">+3 puntos</string>
+    <string name="_2_puntos">+2 puntos</string>
+    <string name="_1_punto">+1 punto</string>
+    <string name="team_b">Team B</string>
+    <string name="action_reset">Reset</string>
+    <string name="terminar_juego">Terminar juego</string>
+</resources>
