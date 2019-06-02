@@ -7,4 +7,6 @@
     <string name="team_b">Team B</string>
     <string name="action_reset">Reset</string>
     <string name="terminar_juego">Terminar juego</string>
+    <string name="equipo_izq">Equipo izq</string>
+    <string name="equipo_der">Equipo der</string>
 </resources>
