@@ -48,7 +48,6 @@ class MatchListFragment: Fragment() {
 
         viewModel.getAll().observe(this, Observer {
             matches ->
-
             Log.d("Lista de partidos","-----------------------")
             for (match in matches){
                 listOfMatches.add(match)
@@ -58,6 +57,11 @@ class MatchListFragment: Fragment() {
         })
         initRecyclerView(resources.configuration.orientation, view)
         return view
+    }
+
+    override fun onPause() {
+        super.onPause()
+        listOfMatches.clear()
     }
 
     fun initRecyclerView(orientation:Int, container:View){

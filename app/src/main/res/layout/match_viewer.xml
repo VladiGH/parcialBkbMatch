@@ -26,7 +26,7 @@
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/robotomedium"
                 android:text="@string/equipo_izq"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -54,7 +54,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
                 android:text="VS"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/tv_team_name_right"
                 app:layout_constraintStart_toEndOf="@+id/tv_team_name_left"
@@ -69,7 +69,7 @@
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/robotomedium"
                 android:text="@string/equipo_der"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -95,7 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fecha"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_gravity="center_horizontal"/>
         <TextView
             android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hora"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:layout_gravity="center|center_vertical"/>
         <TextView
             android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ganador"
             android:layout_gravity="center|center_vertical"
-            android:textSize="25sp"/>
+            android:textSize="20sp"/>
         <TextView
             android:id="@+id/winner"
             android:layout_width="wrap_content"

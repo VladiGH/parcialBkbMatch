@@ -17,21 +17,11 @@
         android:layout_weight="1"
         android:id="@+id/landscape_left">
 
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:textSize="28sp"-->
-            <!--android:text="Juegos Terminados"-->
-            <!--android:fontFamily="@font/robotomedium"/>-->
-
-
-
-        <!--<androidx.recyclerview.widget.RecyclerView-->
-            <!--android:id="@+id/rv_finished_matches"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--tools:listitem="@layout/games_resume" />-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_finished_matches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/games_resume" />
 
     </FrameLayout>
 

@@ -16,7 +16,7 @@
             android:layout_gravity="center"
             android:textSize="28sp"
             android:text="Juegos Terminados"
-        android:fontFamily="@font/robotomedium"/>
+            android:fontFamily="@font/robotomedium"/>
 
 
 

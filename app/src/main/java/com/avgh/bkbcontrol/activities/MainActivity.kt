@@ -68,15 +68,17 @@ class MainActivity : AppCompatActivity(), MatchListFragment.MatchListener{
 
         val resource = if(resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT)
             R.id.main_fragment_container
-        else{
+
+        else if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE){
             matchFragmentContent = matchFragment.newInstance(Match("N/A","N/A","N/A","N/A","N/A","N/A"))
             changeFragment(R.id.fragment_content, matchFragmentContent)
 
             R.id.landscape_left
         }
+        else R.id.main_fragment_container
 
        changeFragment(resource, mainFragment)
     }
 
-    private fun changeFragment(id: Int, frag: Fragment){ supportFragmentManager.beginTransaction().replace(id, frag).addToBackStack("Main").commit() }
+    private fun changeFragment(id: Int, frag: Fragment){ supportFragmentManager.beginTransaction().replace(id, frag).addToBackStack("Mani").commit() }
 }
