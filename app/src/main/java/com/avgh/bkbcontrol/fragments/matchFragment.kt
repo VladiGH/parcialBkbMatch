@@ -26,7 +26,20 @@ class matchFragment: Fragment() {
         view.findViewById<TextView>(R.id.tv_team_score_right).text = myMatch.scoreTeam2
         view.findViewById<TextView>(R.id.tv_fecha).text = myMatch.date
         view.findViewById<TextView>(R.id.tv_hora).text = myMatch.time
+        view.findViewById<TextView>(R.id.winner).text = isWinner(myMatch)
     }
+    fun isWinner(match: Match): String{
+        if(match.scoreTeam1 > match.scoreTeam2)
+            return match.nameTeam1
+
+        if(match.scoreTeam2 > match.scoreTeam1)
+            return match.nameTeam2
+        if(match.scoreTeam1 == match.scoreTeam2)
+            return "Ninguno. ¡E M P A T E!"
+        else
+            return "Pos nada"
+    }
+
 
     companion object {
         @JvmStatic

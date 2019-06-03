@@ -42,8 +42,6 @@ class MainActivity : AppCompatActivity(), MatchListFragment.MatchListener{
             Log.d("Lista de partidos","-----------------------")
             for (match in matches){
                 //listOfMatches.add(match)
-
-
                 Log.d("Lista: ", match.nameTeam1)
                 Log.d("Lista: ", match.nameTeam2)
             }
@@ -80,5 +78,5 @@ class MainActivity : AppCompatActivity(), MatchListFragment.MatchListener{
        changeFragment(resource, mainFragment)
     }
 
-    private fun changeFragment(id: Int, frag: Fragment){ supportFragmentManager.beginTransaction().replace(id, frag).commit() }
+    private fun changeFragment(id: Int, frag: Fragment){ supportFragmentManager.beginTransaction().replace(id, frag).addToBackStack("Main").commit() }
 }

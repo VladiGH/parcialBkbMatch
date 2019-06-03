@@ -53,6 +53,7 @@ class MatchListFragment: Fragment() {
             for (match in matches){
                 listOfMatches.add(match)
                 matchAdapter.changeDataSet(listOfMatches)
+
             }
         })
         initRecyclerView(resources.configuration.orientation, view)
