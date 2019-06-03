@@ -16,4 +16,9 @@
     <string name="ingresa_el_nombre_del_equipo">Ingresa el nombre del equipo</string>
     <string name="nombre_del_equipo">Nombre del equipo</string>
     <string name="a_jugar">A jugar!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="xx_xx_xx">xx/xx/xx</string>
+    <string name="xx_xx">xx:xx</string>
 </resources>
