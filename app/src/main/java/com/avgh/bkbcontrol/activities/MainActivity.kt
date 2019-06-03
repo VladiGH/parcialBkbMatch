@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity(), MatchListFragment.MatchListener{
 
         addGame.setOnClickListener{
             startActivity(Intent(this, NewGame::class.java))
+
         }
 
         val viewModel = ViewModelProviders.of(this).get(matchViewModel::class.java)

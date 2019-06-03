@@ -7,8 +7,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
-
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.avgh.bkbcontrol.AppConstants
 import com.avgh.bkbcontrol.R
@@ -17,10 +15,15 @@ import com.avgh.bkbcontrol.databinding.ScoresBinding
 import com.avgh.bkbcontrol.viewmodel.ViewModel
 import com.avgh.bkbcontrol.viewmodel.matchViewModel
 import kotlinx.android.synthetic.main.scores.*
-
+import java.text.SimpleDateFormat
+import java.util.*
 class GamePlay: AppCompatActivity() {
 
     lateinit var scoreViewModel: ViewModel
+    var fecha = Date()
+    var formatFecha = SimpleDateFormat("dd-MM-yy")
+    var formatHora = SimpleDateFormat("HH:mm")
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,9 +42,10 @@ class GamePlay: AppCompatActivity() {
         tv_teamB.text = teamB
 
         bt_finishgame.setOnClickListener {
-            viewmodelBD.insert(Match(teamA,teamB,scoreViewModel.scoreTeamA.value!!,scoreViewModel.scoreTeamB.value!!,"25/10","2:40 pm"))
+            viewmodelBD.insert(Match(teamA,teamB,scoreViewModel.scoreTeamA.value!!,scoreViewModel.scoreTeamB.value!!,formatFecha.format(fecha).toString(),formatHora.format(fecha).toString()))
             val intent = Intent(this@GamePlay, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
         viewmodelBD.getAll().observe(this, Observer {matches->
             //TODO: adapter.changeDataSet(repos)

@@ -20,12 +20,14 @@ class NewGame: AppCompatActivity() {
                 intent.putExtra(AppConstants.KEY_TEAM1_NEWGAME_TO_THEGAME, et_equipo_izq_name.text.toString())
                 intent.putExtra(AppConstants.KEY_TEAM2_NEWGAME_TO_THEGAME, et_equipo_der_name.text.toString())
                 startActivity(intent)
+                finish()
             }
             else{
                 Toast.makeText(this, "Rellena los campos requeridos", Toast.LENGTH_LONG).show()
             }
         }
     }
+
 
 
 }
